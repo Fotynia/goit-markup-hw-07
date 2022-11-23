@@ -82,6 +82,7 @@ color: $color-brend;
     .container-footer-insta__social-list {
         display: block;
     }
+
     .social-list__icon {
         height: 44px;
         width: 44px;
@@ -95,13 +96,18 @@ color: $color-brend;
 
     .social-list__icon:hover {
         background: $color-accent;
-
     }
-    .social-list__icon:hover .social-list__svg {
-        fill: $color-brend;
-    } 
 
-    .social-list {
+    .social-list__icon:focus {
+        background: $color-accent;
+    }
+    .social-list__icon:hover,
+    .social-list__icon:focus {
+    background-color: $color-accent;
+    border-radius: 50%;
+    }
+
+     .social-list {
         display: flex;
         justify-content: center;
         gap: 10px;

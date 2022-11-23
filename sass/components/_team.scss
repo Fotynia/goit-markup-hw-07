@@ -88,16 +88,26 @@ padding: 0px;
 margin: 0px;
 width: 44px;
 height: 44px;
+}
 
-&__icon:hover {
+.social-list__icon:hover,
+.social-list__icon:focus {
 background-color: $color-accent;
 border-radius: 50%;
 }
 
-&__icon:hover &__svg {
- fill: $color-brend;
+.social-list__icon:focus {
+    background-color: $color-accent;
+    border-radius: 50%;  
 }
-}
+
+// .social-list__icon:hover .social-list__svg {
+//  fill: $color-brend;
+// }
+// .social-list__icon:focus .social-list__svg {
+//     fill: $color-accent;
+   
+// }
 
 .social-list__svg {
 fill: #afb1b8;
@@ -105,3 +115,7 @@ width: 20px;
 height: 20px;
 }
 
+// .header .contacts a.phone:hover, 
+// .header .contacts a.phone:focus {
+//     color: var(--accent-color);
+// }

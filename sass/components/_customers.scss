@@ -39,6 +39,10 @@
         fill: $color-accent;
     }
 
+    .customers__link:focus {
+      fill: $color-accent;
+  }
+
   .customers__link {
     display: flex;
     align-items: center;
