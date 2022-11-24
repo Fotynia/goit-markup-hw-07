@@ -56,7 +56,6 @@ color: $color-brend;
   }
 
   .container-mailing-list__button {
-    @extend %button;
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;

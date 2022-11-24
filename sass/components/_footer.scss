@@ -101,11 +101,11 @@ color: $color-brend;
     .social-list__icon:focus {
         background: $color-accent;
     }
-    .social-list__icon:hover,
-    .social-list__icon:focus {
-    background-color: $color-accent;
-    border-radius: 50%;
-    }
+    // .social-list__icon:hover,
+    // .social-list__icon:focus {
+    // background-color: $color-accent;
+    // border-radius: 50%;
+    // }
 
      .social-list {
         display: flex;

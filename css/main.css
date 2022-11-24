@@ -80,19 +80,6 @@ p {
   margin-bottom: 0;
 }
 
-.container-mailing-list__button, .hero__button, .button {
-  display: inline-block;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  color: #212121;
-  background-color: #F5F4FA;
-  cursor: pointer;
-  padding: 6px 22px;
-}
-
 body {
   margin: 0px;
   background-color: #FFFFFF;
@@ -555,7 +542,8 @@ img {
 .team__men-item {
   margin-right: 30px;
 }
-.team__men-item__men-item:last-child {
+
+.team__men-item:last-child {
   margin-right: 0px;
 }
 
@@ -614,11 +602,23 @@ img {
   width: 44px;
   height: 44px;
 }
-.social-list__icon__icon:hover {
+
+.social-list__icon:hover,
+.social-list__icon:focus {
   background-color: #2196F3;
   border-radius: 50%;
 }
-.social-list__icon__icon:hover .social-list__icon__svg {
+
+.social-list__icon:focus {
+  background-color: #2196F3;
+  border-radius: 50%;
+}
+
+.social-list__icon:hover .social-list__svg {
+  fill: #FFFFFF;
+}
+
+.social-list__icon:focus .social-list__svg {
   fill: #FFFFFF;
 }
 
@@ -729,6 +729,10 @@ img {
 }
 
 .customers__list-card:hover .customers__icon {
+  fill: #2196F3;
+}
+
+.customers__link:focus .customers__icon {
   fill: #2196F3;
 }
 
@@ -850,8 +854,8 @@ img {
   background: #2196F3;
 }
 
-.social-list__icon:hover .social-list__svg {
-  fill: #FFFFFF;
+.social-list__icon:focus {
+  background: #2196F3;
 }
 
 .social-list {
@@ -910,11 +914,42 @@ img {
   margin-bottom: 34px;
 }
 
-.filters__button {
+.filters__item {
   margin-right: 8px;
 }
-.filters__button:last-child {
+
+.filters__item:last-child {
   margin-right: 0;
+}
+
+.filters__button {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: #212121;
+  background-color: #F5F4FA;
+  cursor: pointer;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+}
+
+.filters__button:hover,
+.filters__button:focus {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  background-color: #2196F3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ПОРТФОЛІО ОВЕРЛЕЙ */
@@ -1339,7 +1374,7 @@ input .consent__checkbox {
 
 .consent__checkbox:checked + .consent__icon {
   background-color: #2196F3;
-  background-image: url(../../img/icon-check.svg);
+  background-image: url(../img/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;

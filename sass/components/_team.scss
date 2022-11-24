@@ -41,11 +41,12 @@ height: auto;
 
 .team__men-item {
 margin-right: 30px;
+}
 
-&__men-item:last-child {
+.team__men-item:last-child {
 margin-right: 0px;
 }
-}
+
 
 .team__text {
 font-size: 16px;
@@ -101,13 +102,13 @@ border-radius: 50%;
     border-radius: 50%;  
 }
 
-// .social-list__icon:hover .social-list__svg {
-//  fill: $color-brend;
-// }
-// .social-list__icon:focus .social-list__svg {
-//     fill: $color-accent;
+.social-list__icon:hover .social-list__svg {
+ fill: $color-brend;
+}
+.social-list__icon:focus .social-list__svg {
+   fill: $color-brend;
    
-// }
+}
 
 .social-list__svg {
 fill: #afb1b8;

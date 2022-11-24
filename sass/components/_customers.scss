@@ -39,7 +39,7 @@
         fill: $color-accent;
     }
 
-    .customers__link:focus {
+    .customers__link:focus .customers__icon {
       fill: $color-accent;
   }
 
@@ -52,4 +52,3 @@
   .customers__icon {
     fill: #AFB1B8; 
   }
-
